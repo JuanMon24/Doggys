@@ -1,0 +1,120 @@
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+/* td{
+    border: 1px solid;
+} */
+.container{
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 80vh;
+    background-color:white;
+    border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+    overflow: scroll;
+
+}
+.actions{
+    position: absolute;
+    top: 1em;
+    right:1em;
+}
+table{
+    width: 100%;
+    border-spacing: 0px;
+}
+table td, table th{
+    padding: 1em;
+    text-align: left;
+}
+.celda{
+    background-color: #FFC171   ;
+}
+.fa-star{
+    color: yellow;
+}
+.tittle-item{
+    border-bottom: 2px solid #FFC171;
+    padding-bottom: 1em;
+    font-size: 32px;
+}
+.position{
+    background-color: #FFC171;
+    color: white;
+    /* padding: 10px; */
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0.5em;
+    
+
+}
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #FFC171;
+    display: inline-block;
+    font-weight: 300px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a:hover{
+    opacity: 0.8;
+}
+.tittle{
+    text-transform: uppercase;
+    text-align: center;
+}  
+.address{
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 1em;
+}
+.img{
+    float: left;
+    margin-right: 16px;
+    height: 200px;
+}
+@media (min-height:550px){
+    .content{
+        height: 550px;
+    }
+}
+@media(max-width:600px){
+    .content{
+        padding: 1em;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #FFC171;
+    }
+    th{
+        display: none;
+    }
+}
+img{
+    max-width: 100%;
+}
